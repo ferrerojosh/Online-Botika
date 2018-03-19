@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PharmacyCell" id="KGk-i7-Jjw" customClass="PharmacyTableViewCell" customModule="Online_Botika" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHP 0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lts-W9-hJi">
+                        <rect key="frame" x="240" y="8" width="72" height="27.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvt-Uv-5j8">
+                        <rect key="frame" x="8" y="22.5" width="49.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pharmacy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEY-0r-7cV">
+                        <rect key="frame" x="8" y="3" width="77" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="lts-W9-hJi" secondAttribute="trailing" constant="8" id="5ys-D7-wfX"/>
+                    <constraint firstItem="uvt-Uv-5j8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22.5" id="907-Cu-i3e"/>
+                    <constraint firstItem="uvt-Uv-5j8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="NdT-Zo-v4T"/>
+                    <constraint firstAttribute="bottom" secondItem="lts-W9-hJi" secondAttribute="bottom" constant="8" id="bGm-NL-Nwv"/>
+                    <constraint firstAttribute="bottom" secondItem="uvt-Uv-5j8" secondAttribute="bottom" constant="3" id="bRX-LH-RBL"/>
+                    <constraint firstItem="sEY-0r-7cV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="guX-kT-Cf2"/>
+                    <constraint firstItem="sEY-0r-7cV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="mqm-iJ-jOI"/>
+                    <constraint firstItem="lts-W9-hJi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ssy-Y4-thv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="textAddress" destination="uvt-Uv-5j8" id="O2W-kD-zMg"/>
+                <outlet property="textPharmacy" destination="sEY-0r-7cV" id="3ZH-by-gbe"/>
+                <outlet property="textPrice" destination="lts-W9-hJi" id="dy7-Nj-ngv"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
